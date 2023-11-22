@@ -8,6 +8,11 @@ const router = createRouter({
       name: 'articles',
       //lazy load
       component: () => import('@/pages/ArticlesPage.vue')
+    },
+    {
+      path: '/about',
+      name: 'about',
+      component: () => import('@/pages/AboutPage.vue')
     }
   ]
 })
