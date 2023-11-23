@@ -12,9 +12,8 @@ jobs:
     - uses: actions/setup-node@v3
       with:
         node-version-file: '.node-version'
-        yarn-file: '.yarnrc'
-    - run: yarn install
-    - run: yarn build
+    - run: npm i
+    - run: npm run build
   eslint:
     runs-on: ubuntu-latests
     steps:
@@ -22,7 +21,6 @@ jobs:
     - uses: actions/setup-node@v3
       with:
         node-version-file: '.node-version'
-        yarn-file: '.yarnrc'
-    - run: yarn install
-    - run: yarn lint
+    - run: npm i
+    - run: npm run lint
 
