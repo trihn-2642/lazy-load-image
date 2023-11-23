@@ -12,17 +12,15 @@ jobs:
     - uses: actions/setup-node@v3
       with:
         node-version-file: '.node-version'
-        cache: 'yarn'
-    - run: yarn install
-    - run: yarn build
+    - run: npm i
+    - run: npm run build
   eslint:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latests
     steps:
     - uses: actions/checkout@v3
     - uses: actions/setup-node@v3
       with:
         node-version-file: '.node-version'
-        cache: 'yarn'
-    - run: yarn install
-    - run: yarn lint
+    - run: npm i
+    - run: npm run lint
 
