@@ -22,5 +22,5 @@ jobs:
       with:
         node-version-file: '.node-version'
     - run: yarn install
-    - run: yarn build
+    - run: yarn lint
 
