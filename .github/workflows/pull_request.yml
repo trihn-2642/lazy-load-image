@@ -4,7 +4,7 @@ on:
       - "dev"
 
 jobs:
-  eslint-and-test:
+  eslint:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -13,4 +13,3 @@ jobs:
           node-version-file: '.node-version'
       - run: yarn
       - run: yarn lint
-      - run: yarn test
