@@ -1,0 +1,8 @@
+name = "lazy load worker"
+type = "typescript"
+account_id = "5e716f980bb8bc8d0893a562abed3c30"
+
+[site]
+bucket = "./public"
+
+main="worker-script.ts"
