@@ -1,4 +1,0 @@
-name = "wrangler-action-test"
-main = "workers-site/index.ts"
-compatibility_date = "2023-11-24"
-workers_dev = true
